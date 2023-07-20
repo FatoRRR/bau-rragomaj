@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
+import {resolve} from 'path'
 
 export default defineConfig({
     plugins: [
@@ -17,4 +18,19 @@ export default defineConfig({
             },
         }),
     ],
+    resolve: {
+        extensions: ['.vue', '.js'],
+        alias: {
+            '@': resolve(__dirname, 'resources/js'),
+            sass: resolve(__dirname, 'resources/sass'),
+            pages: resolve(__dirname, 'resources/js/pages'),
+            library: resolve(__dirname, 'resources/js/library'),
+            atoms: resolve(__dirname, 'resources/js/components/atoms'),
+            molecules: resolve(__dirname, 'resources/js/components/molecules'),
+            organisms: resolve(__dirname, 'resources/js/components/organisms'),
+        },
+        dedupe: [
+            'vue',
+        ],
+    },
 });

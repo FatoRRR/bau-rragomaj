@@ -1,11 +1,12 @@
 <template>
-  <div>NICE App.vue 2</div>
-  <router-view />
+  <div>
+    HOME
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'Home'
 }
 </script>
 
