@@ -1,6 +1,6 @@
 <template>
   <carousel
-    :autoplay="2000"
+    :autoplay="5000"
     :items-to-show="1"
     :wrap-around="true"
   >
@@ -15,16 +15,12 @@
         }"
       ></div>
     </slide>
-
-    <template #addons>
-      <pagination />
-    </template>
   </carousel>
 </template>
 
 <script>
 // If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+import { Carousel, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 
@@ -33,8 +29,6 @@ export default {
   components: {
     Carousel,
     Slide,
-    Pagination,
-    Navigation,
   },
   data() {
     return {
