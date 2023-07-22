@@ -23,4 +23,9 @@ export default {
 </script>
 
 <style>
+#page-content {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 </style>
