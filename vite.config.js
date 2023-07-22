@@ -3,6 +3,8 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 import {resolve} from 'path'
 
+const pathSrc = resolve(__dirname, './resources');
+
 export default defineConfig({
     plugins: [
         laravel({
@@ -32,5 +34,12 @@ export default defineConfig({
         dedupe: [
             'vue',
         ],
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "${pathSrc}/sass/index.scss";`,
+        },
+      },
     },
 });

@@ -1,0 +1,40 @@
+:root {
+  --primary-action-color: 26,91,255;
+
+  --primary-background-color: 255,255,255;
+  --secondary-background-color: 27,30,44;
+
+  --primary-color: 73,69,79;
+  --secondary-color: 255,255,255;
+}
+
+
+// z-index
+$zIndexChats: 7;
+$zIndexDialog: 11;
+$zIndexContent: 10;
+$zIndexNavigation: 9;
+$zIndexChatsOverview: 8;
+
+
+$red: #DB4437;
+$blue: #1a5bff;
+$green: #0F9D58;
+$yellow: #F4B400;
+$purple: #BB86FC;
+
+// Defaults
+$primaryActionColor: #1a5bff;
+$secondaryBackgroundColor: #1B1E2C;
+$primaryBackgroundColor: #FFFFFF;
+$secondaryColor: #ffffff;
+$primaryColor: #49454F;
+
+
+// RIPPLE-STYLES
+$rippleColor: rgba(255, 255, 255, 0.25);
+
+// FONT-STYLES
+$headerColor: rgba(255, 255, 255, 0.87);
+$subheaderColor: rgba(255, 255, 255, 0.67);
+$fontFamily: sans-serif;
