@@ -1,5 +1,4 @@
-@import
-'./default.scss',
+@import './default.scss',
 './animations.scss',
 './button.scss',
 './calendar.scss',
@@ -19,13 +18,16 @@
 * {
   box-sizing: border-box;
   // Hide scrollbars
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
   overflow: -moz-scrollbars-none;
-  scrollbar-width: none;  /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 *::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+  display: none;
+  /* Safari and Chrome */
 }
 
 html,
@@ -52,6 +54,7 @@ button {
 }
 
 #app {
+  flex-direction: column;
   overflow: hidden;
   display: flex;
   height: 100vh;
@@ -75,78 +78,103 @@ button {
 .d-flex {
   display: flex;
 }
+
 .flex-grow-1 {
   flex-grow: 1;
 }
+
 .flex-direction-column {
   flex-direction: column;
 }
+
 .align-items-center {
   align-items: center;
 }
+
 .align-items-flex-end {
   align-items: flex-end;
 }
+
 .justify-content-center {
   justify-content: center;
 }
+
 .justify-content-flex-end {
   justify-content: flex-end;
 }
+
 .gap-1 {
   gap: 4px;
 }
+
 .gap-2 {
   gap: 7px;
 }
+
 .gap-3 {
   gap: 14px;
 }
+
 .gap-4 {
   gap: 24px;
 }
+
 .m-b-1 {
   margin-bottom: 4px;
 }
+
 .m-b-2 {
   margin-bottom: 7px;
 }
+
 .m-b-3 {
   margin-bottom: 14px;
 }
+
 .m-b-4 {
   margin-bottom: 24px;
 }
+
 .m-t-1 {
   margin-top: 4px;
 }
+
 .m-t-2 {
   margin-top: 7px;
 }
+
 .m-t-3 {
   margin-top: 14px;
 }
+
 .m-t-4 {
   margin-top: 24px;
 }
+
 .m-1 {
   margin: 4px;
 }
+
 .m-2 {
   margin: 7px;
 }
+
 .m-3 {
   margin: 14px;
 }
+
 .m-4 {
   margin: 24px;
 }
+
 .w-25 {
   width: 25%;
 }
+
 .w-50 {
   width: 50%;
 }
+
 .w-100 {
   width: 100%;
 }
@@ -156,6 +184,7 @@ button {
 .v-leave-active {
   transition: opacity 0.3s ease;
 }
+
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
